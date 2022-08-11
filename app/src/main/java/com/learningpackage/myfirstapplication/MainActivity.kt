@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
             timesClicked = timesClicked + 1
             tvMytextView.text = timesClicked.toString()
-
+            Toast.makeText(this, "Toast msg", Toast.LENGTH_SHORT).show()
         }
     }
 }
